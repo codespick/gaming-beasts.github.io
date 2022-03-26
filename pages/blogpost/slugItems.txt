@@ -1,0 +1,49 @@
+{
+            gamesCard2.map((blogItems) => {
+
+                return (
+
+
+
+
+                    <InfiniteScroll
+                        dataLength={gamesCard2.length} //This is important field to render the next data
+                        next={fetchData2}
+                      
+                        hasMore={props.allCount !== gamesCard2.length}
+                         
+                        key={blogItems.slug}
+                    >
+
+                        <div className="card">
+                            {/* <a href={blogItems.slug}> */}
+                            <Image height={225} width={370} className="card-img-top" src={blogItems.main_image} alt={blogItems.title} />
+                            <div className="card-body">
+                                <h5 className="card-title">{blogItems.title}</h5>
+                                
+
+                                <p className="card-text" style={{ color: props.colorMode === "dark" ? "white" : "black" }}><i className="fas fa-eye"></i>{process.browser && localStorage.clickcount} <span style={{ color: "green" }}>By Admin </span> - <i className="fas fa-calendar-alt"></i>Jan 20, 2018</p>
+                                <Link href={"blogpost/" + blogItems.slug}>
+                                    <div className='col-lg-12'>
+                                        <button type='button' className='btn btn-lg btn-primary'><span className='glyphicon glyphicon-globe'></span>visit</button>
+                                    </div>
+
+                                </Link>
+                            </div>
+                            {/* </a> */}
+                        </div>
+
+
+
+
+                    </InfiniteScroll>
+
+
+
+
+
+                )
+
+
+            })
+        }

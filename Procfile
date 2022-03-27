@@ -1,1 +1,1 @@
-web: next dev
+web: yarn dev

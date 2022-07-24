@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002F1gb-to-5gb-games","\u002Fcrashmetal-cyberpunk-free-pc-game-download","\u002F","\u002F[pid]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

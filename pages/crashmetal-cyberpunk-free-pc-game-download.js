@@ -1,12 +1,8 @@
 import { useRouter } from "next/router";
-// import Head from "next/head";
-// import Image from "next/image";
+
 import * as fs from "fs";
 import React, { useEffect, useState } from "react";
-// import * as fs from "fs"
-// import Link from 'next/Link';
-
-const Pid = (props) => {
+const CrashMetalCyberPunkFreePcGamesDownload = (props) => {
   const router = useRouter();
   // let sample = {
   //     props: props.myProps
@@ -32,25 +28,6 @@ const Pid = (props) => {
     getAnswer();
   }, [router.isReady]);
 
-  // let practiceJson = async () => {
-  //   let data = await fs.promises.readdir("1GbTo5GbGames", "utf-8");
-  //   let allCount = data.length;
-  //   console.log(allCount);
-  //   let myfile;
-  //   let allblogs = [];
-  //   for (let index = 0; index < 3; index++) {
-  //     const item = data[index];
-  //     // console.log(item);
-  //     myfile = await fs.promises.readFile("1GbTo5GbGames/" + item, "utf-8");
-  //     allblogs.push(JSON.parse(myfile));
-  //   }
-
-  //   // console.log('====================================');
-  //   // console.log(allblogs);
-  //   // console.log('====================================');
-  // };
-
-  // practiceJson();
   return (
     <>
       {/* <GamingStyle /> */}
@@ -497,7 +474,7 @@ const Pid = (props) => {
 
                         <p style={{ textAlign: "center" }}>
                           <a
-                            href={`https://gamingbeasts.com/${value.download}/`}
+                            href={`https://uploadbeast.com/5J4?pt=ZDQyRVB6ZnBHVHJZYWpmTkFkZ3lzVVZNU2xKNVptZFBiM0k0WW5ONGRVUkxXVXB5WWxFOVBRPT0%3D`}
                             download="true"
                           >
                             <button className="dlbtn">Download Now</button>
@@ -674,47 +651,6 @@ const Pid = (props) => {
 
                     <div className="post-components"></div>
                   </div>
-
-                  <aside
-                    className="sidebar tie-col-md-4 tie-col-xs-12 normal-side is-sticky"
-                    aria-label="Primary Sidebar"
-                  >
-                    <div className="theiaStickySidebar">
-                      <div
-                        id="search-2"
-                        className="container-wrapper widget widget_search"
-                      >
-                        <div className="widget-title the-global-title has-block-head-4">
-                          <div className="the-subtitle">Search Games</div>
-                        </div>
-                        <form
-                          role="search"
-                          method="get"
-                          className="search-form"
-                          action="https://gamingbeasts.com/"
-                        >
-                          <label style={{ marginRight: "-20%" }}>
-                            <span className="screen-reader-text">
-                              Search for:
-                            </span>
-                            <input
-                              type="search"
-                              className="search-field"
-                              placeholder="Search &hellip;"
-                              onChange={""}
-                              name="s"
-                            />
-                          </label>
-                          <input
-                            type="submit"
-                            className="search-submit"
-                            readOnly="Search"
-                          />
-                        </form>
-                        <div className="clearfix"></div>
-                      </div>
-                    </div>
-                  </aside>
                 </div>
                 // </InfiniteScroll>
               );
@@ -724,28 +660,7 @@ const Pid = (props) => {
     </>
   );
 };
-export async function getStaticPaths() {
-  const files = fs.readdirSync("1GbTo5GbGames");
-  // const paths = files.map(filename => (
-  //     console.log(filename)
-  // ))
 
-  return {
-    // paths: [
-    //     files.map((filename) => {
-    //         let allFiles = filename.split(".json")[0]
-    //         // console.log(filename.split(".json")[0])
-    //         // return allFiles;
-    //         return { params: { slug: allFiles } }
-    //     }),
-    // ],
-    paths: [
-      // { params: { pid: "crashmetal-cyberpunk-free-pc-game-download" } },
-      { params: { pid: "dirt-rally-pc-game-download" } },
-    ],
-    fallback: true, // false or 'blocking'
-  };
-}
 export async function getStaticProps({ params }) {
   // console.log(params.slug);
   let data = await fs.promises.readdir("1GbTo5GbGames");
@@ -771,35 +686,4 @@ export async function getStaticProps({ params }) {
   // }
 }
 
-// export async function getServerSideProps(context) {
-//     console.log('====================================');
-//     // const router = useRouter();
-//     // const [blog, setBlog] = useState()
-//     // const { slug } = context.query;
-//     // console.log(req.query);
-//     console.log('====================================');
-//     let data = await fetch(`http://localhost:3000/api/set-1gb-to-5gb-games`)
-//     let myProps = await data.json()
-
-//     return {
-//         props: { myProps }, // will be passed to the page component as props
-//     }
-// }
-
-// return { props: { myProps } }
-// let data = await fs.promises.readdir("pagecontents");
-// let allCount = data.length
-// let myfile;
-// let allblogs = [];
-// for (let index = 0; index < 3; index++) {
-//     const item = data[index];
-//     // console.log(item);
-//     myfile = await fs.promises.readFile(("pagecontents/" + item), "utf-8");
-//     allblogs.push(JSON.parse(myfile))
-
-// }
-// return {
-//     props: { allblogs, allCount }
-// }
-
-export default Pid;
+export default CrashMetalCyberPunkFreePcGamesDownload;
